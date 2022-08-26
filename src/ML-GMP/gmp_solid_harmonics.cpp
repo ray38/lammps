@@ -2,139 +2,139 @@
 #include "solid_harmonics.h"
 
 
-SolidGMPFunction get_solid_mcsh_function(int mcsh_order, int group_num)
+SolidGMPFunction get_solid_gmp_function(int mcsh_order, int group_num)
 {
     SolidGMPFunction result;
 
     if (mcsh_order == -1) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_n1_1;
+            result = calc_solid_GMP_n1_1;
         }
     } else if (mcsh_order == 0) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_0_1;
+            result = calc_solid_GMP_0_1;
         }
     } else if (mcsh_order == 1) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_1_1;
+            result = calc_solid_GMP_1_1;
         }
     } else if (mcsh_order == 2) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_2_1;
+            result = calc_solid_GMP_2_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_2_2;
+            result = calc_solid_GMP_2_2;
         }
     } else if (mcsh_order == 3) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_3_1;
+            result = calc_solid_GMP_3_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_3_2;
+            result = calc_solid_GMP_3_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_3_3;
+            result = calc_solid_GMP_3_3;
         }
     } else if (mcsh_order == 4) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_4_1;
+            result = calc_solid_GMP_4_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_4_2;
+            result = calc_solid_GMP_4_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_4_3;
+            result = calc_solid_GMP_4_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_4_4;
+            result = calc_solid_GMP_4_4;
         }
     } else if (mcsh_order == 5) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_5_1;
+            result = calc_solid_GMP_5_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_5_2;
+            result = calc_solid_GMP_5_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_5_3;
+            result = calc_solid_GMP_5_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_5_4;
+            result = calc_solid_GMP_5_4;
         } else if (group_num == 5){
-            result = calc_solid_MCSH_5_5;
+            result = calc_solid_GMP_5_5;
         }
     } else if (mcsh_order == 6) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_6_1;
+            result = calc_solid_GMP_6_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_6_2;
+            result = calc_solid_GMP_6_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_6_3;
+            result = calc_solid_GMP_6_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_6_4;
+            result = calc_solid_GMP_6_4;
         } else if (group_num == 5){
-            result = calc_solid_MCSH_6_5;
+            result = calc_solid_GMP_6_5;
         } else if (group_num == 6){
-            result = calc_solid_MCSH_6_6;
+            result = calc_solid_GMP_6_6;
         } else if (group_num == 7){
-            result = calc_solid_MCSH_6_7;
+            result = calc_solid_GMP_6_7;
         }
     } else if (mcsh_order == 7) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_7_1;
+            result = calc_solid_GMP_7_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_7_2;
+            result = calc_solid_GMP_7_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_7_3;
+            result = calc_solid_GMP_7_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_7_4;
+            result = calc_solid_GMP_7_4;
         } else if (group_num == 5){
-            result = calc_solid_MCSH_7_5;
+            result = calc_solid_GMP_7_5;
         } else if (group_num == 6){
-            result = calc_solid_MCSH_7_6;
+            result = calc_solid_GMP_7_6;
         } else if (group_num == 7){
-            result = calc_solid_MCSH_7_7;
+            result = calc_solid_GMP_7_7;
         } else if (group_num == 8){
-            result = calc_solid_MCSH_7_8;
+            result = calc_solid_GMP_7_8;
         }
     } else if (mcsh_order == 8) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_8_1;
+            result = calc_solid_GMP_8_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_8_2;
+            result = calc_solid_GMP_8_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_8_3;
+            result = calc_solid_GMP_8_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_8_4;
+            result = calc_solid_GMP_8_4;
         } else if (group_num == 5){
-            result = calc_solid_MCSH_8_5;
+            result = calc_solid_GMP_8_5;
         } else if (group_num == 6){
-            result = calc_solid_MCSH_8_6;
+            result = calc_solid_GMP_8_6;
         } else if (group_num == 7){
-            result = calc_solid_MCSH_8_7;
+            result = calc_solid_GMP_8_7;
         } else if (group_num == 8){
-            result = calc_solid_MCSH_8_8;
+            result = calc_solid_GMP_8_8;
         } else if (group_num == 9){
-            result = calc_solid_MCSH_8_9;
+            result = calc_solid_GMP_8_9;
         } else if (group_num == 10){
-            result = calc_solid_MCSH_8_10;
+            result = calc_solid_GMP_8_10;
         }
     } else if (mcsh_order == 9) {
         if (group_num == 1) {
-            result = calc_solid_MCSH_9_1;
+            result = calc_solid_GMP_9_1;
         } else if (group_num == 2){
-            result = calc_solid_MCSH_9_2;
+            result = calc_solid_GMP_9_2;
         } else if (group_num == 3){
-            result = calc_solid_MCSH_9_3;
+            result = calc_solid_GMP_9_3;
         } else if (group_num == 4){
-            result = calc_solid_MCSH_9_4;
+            result = calc_solid_GMP_9_4;
         } else if (group_num == 5){
-            result = calc_solid_MCSH_9_5;
+            result = calc_solid_GMP_9_5;
         } else if (group_num == 6){
-            result = calc_solid_MCSH_9_6;
+            result = calc_solid_GMP_9_6;
         } else if (group_num == 7){
-            result = calc_solid_MCSH_9_7;
+            result = calc_solid_GMP_9_7;
         } else if (group_num == 8){
-            result = calc_solid_MCSH_9_8;
+            result = calc_solid_GMP_9_8;
         } else if (group_num == 9){
-            result = calc_solid_MCSH_9_9;
+            result = calc_solid_GMP_9_9;
         } else if (group_num == 10){
-            result = calc_solid_MCSH_9_10;
+            result = calc_solid_GMP_9_10;
         } else if (group_num == 11){
-            result = calc_solid_MCSH_9_11;
+            result = calc_solid_GMP_9_11;
         } else if (group_num == 12){
-            result = calc_solid_MCSH_9_12;
+            result = calc_solid_GMP_9_12;
         }
     }
 
@@ -142,7 +142,7 @@ SolidGMPFunction get_solid_mcsh_function(int mcsh_order, int group_num)
 }
 
 
-void calc_solid_MCSH_n1_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_n1_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double density = B * exp(-beta * r0_sqr);
     deriv[0] = density * (-2.0 * beta * x0);
@@ -152,7 +152,7 @@ void calc_solid_MCSH_n1_1(double x0, double y0, double z0, double r0_sqr, double
     value[0] = density;
 }
 
-void calc_solid_MCSH_0_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_0_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     // double r0_sqr = x0*x0 + y0*y0 + z0*z0;
     double C1 = calc_C1(A,B,alpha,beta);
@@ -166,7 +166,7 @@ void calc_solid_MCSH_0_1(double x0, double y0, double z0, double r0_sqr, double 
     value[0] = m_0_1;
 }
 
-void calc_solid_MCSH_1_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_1_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -232,7 +232,7 @@ void calc_solid_MCSH_1_1(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_2_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_2_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -297,7 +297,7 @@ void calc_solid_MCSH_2_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_2_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_2_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -363,7 +363,7 @@ void calc_solid_MCSH_2_2(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_3_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_3_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -444,7 +444,7 @@ void calc_solid_MCSH_3_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_3_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_3_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -561,7 +561,7 @@ void calc_solid_MCSH_3_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_3_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_3_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -602,7 +602,7 @@ void calc_solid_MCSH_3_3(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_4_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_4_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -675,7 +675,7 @@ void calc_solid_MCSH_4_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_4_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_4_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -792,7 +792,7 @@ void calc_solid_MCSH_4_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_4_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_4_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -865,7 +865,7 @@ void calc_solid_MCSH_4_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_4_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_4_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -947,7 +947,7 @@ void calc_solid_MCSH_4_4(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_5_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_5_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1044,7 +1044,7 @@ void calc_solid_MCSH_5_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_5_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_5_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1177,7 +1177,7 @@ void calc_solid_MCSH_5_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_5_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_5_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1310,7 +1310,7 @@ void calc_solid_MCSH_5_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_5_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_5_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1383,7 +1383,7 @@ void calc_solid_MCSH_5_4(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_5_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_5_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1481,7 +1481,7 @@ void calc_solid_MCSH_5_5(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_6_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1562,7 +1562,7 @@ void calc_solid_MCSH_6_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1695,7 +1695,7 @@ void calc_solid_MCSH_6_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1812,7 +1812,7 @@ void calc_solid_MCSH_6_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -1909,7 +1909,7 @@ void calc_solid_MCSH_6_4(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2006,7 +2006,7 @@ void calc_solid_MCSH_6_5(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2139,7 +2139,7 @@ void calc_solid_MCSH_6_6(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_6_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_6_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2196,7 +2196,7 @@ void calc_solid_MCSH_6_7(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_7_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2309,7 +2309,7 @@ void calc_solid_MCSH_7_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2458,7 +2458,7 @@ void calc_solid_MCSH_7_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2607,7 +2607,7 @@ void calc_solid_MCSH_7_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2688,7 +2688,7 @@ void calc_solid_MCSH_7_4(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2837,7 +2837,7 @@ void calc_solid_MCSH_7_5(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -2986,7 +2986,7 @@ void calc_solid_MCSH_7_6(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3067,7 +3067,7 @@ void calc_solid_MCSH_7_7(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_7_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_7_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3181,7 +3181,7 @@ void calc_solid_MCSH_7_8(double x0, double y0, double z0, double r0_sqr, double 
 }
 
 
-void calc_solid_MCSH_8_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3270,7 +3270,7 @@ void calc_solid_MCSH_8_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3419,7 +3419,7 @@ void calc_solid_MCSH_8_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3544,7 +3544,7 @@ void calc_solid_MCSH_8_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3657,7 +3657,7 @@ void calc_solid_MCSH_8_4(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3806,7 +3806,7 @@ void calc_solid_MCSH_8_5(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -3955,7 +3955,7 @@ void calc_solid_MCSH_8_6(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4044,7 +4044,7 @@ void calc_solid_MCSH_8_7(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4193,7 +4193,7 @@ void calc_solid_MCSH_8_8(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_9(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_9(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4282,7 +4282,7 @@ void calc_solid_MCSH_8_9(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_8_10(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_8_10(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4396,7 +4396,7 @@ void calc_solid_MCSH_8_10(double x0, double y0, double z0, double r0_sqr, double
 }
 
 
-void calc_solid_MCSH_9_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_1(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4525,7 +4525,7 @@ void calc_solid_MCSH_9_1(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_2(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4690,7 +4690,7 @@ void calc_solid_MCSH_9_2(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_3(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4855,7 +4855,7 @@ void calc_solid_MCSH_9_3(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_4(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -4944,7 +4944,7 @@ void calc_solid_MCSH_9_4(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_5(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5109,7 +5109,7 @@ void calc_solid_MCSH_9_5(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_6(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5274,7 +5274,7 @@ void calc_solid_MCSH_9_6(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_7(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5439,7 +5439,7 @@ void calc_solid_MCSH_9_7(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_8(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5564,7 +5564,7 @@ void calc_solid_MCSH_9_8(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_9(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_9(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5693,7 +5693,7 @@ void calc_solid_MCSH_9_9(double x0, double y0, double z0, double r0_sqr, double 
 
 }
 
-void calc_solid_MCSH_9_10(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_10(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5822,7 +5822,7 @@ void calc_solid_MCSH_9_10(double x0, double y0, double z0, double r0_sqr, double
 
 }
 
-void calc_solid_MCSH_9_11(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_11(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
@@ -5987,7 +5987,7 @@ void calc_solid_MCSH_9_11(double x0, double y0, double z0, double r0_sqr, double
 
 }
 
-void calc_solid_MCSH_9_12(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
+void calc_solid_GMP_9_12(double x0, double y0, double z0, double r0_sqr, double A, double B, double alpha, double beta, double *value, double *deriv)
 {
     double C1 = calc_C1(A,B,alpha,beta);
     double C2 = calc_C2(alpha, beta);
